@@ -1,6 +1,10 @@
 # Image Alignment and Timestamping Script
 
-This script aligns images in a folder based on a reference image using **feature matching** and **homography transformation**. Optionally, it can overlay a timestamp extracted from EXIF metadata.
+This script is designed for aligning multiple images taken from the same location over time. The initial idea was to capture photos from a fixed viewpoint and observe seasonal changes—how snow accumulates in winter, how trees regain their leaves in spring, and how the landscape transforms through summer and autumn.
+
+To ensure smooth visual transitions, the script automatically aligns images to a reference photo using feature matching and homography transformation. This process corrects small shifts in camera positioning, ensuring all images are perfectly overlaid for a seamless comparison or time-lapse video.
+
+Additionally, the script can optionally overlay timestamps extracted from EXIF metadata, marking the date each photo was taken. This feature helps track seasonal changes over time in an organized and visually clear way.
 
 ## Features  
 ✅ **Aligns images** to a reference photo for consistency.  
@@ -45,19 +49,3 @@ output_images/
 
 ## Example Use Case  
 This script was designed to align **year-round images from a fixed window view** at **my work place**, allowing smooth transitions for a time-lapse video showing seasonal changes.
-
-## License  
-This project is licensed under the **GNU General Public License v3.0 (GPL v3)**, ensuring that any modifications or redistributions remain open-source.  
-
-## Uploading to GitHub  
-1. **Initialize Git**:  
-   ```bash
-   git init
-   git add script.py README.md
-   git commit -m "Added image alignment script with optional timestamps"
-   ```
-2. **Connect to GitHub**:  
-   ```bash
-   git remote add origin <your-repo-url>
-   git push -u origin main
-   ```

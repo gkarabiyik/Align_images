@@ -46,6 +46,3 @@ output_images/
 │── aligned/         # Aligned images without timestamps  
 │── dated/           # Aligned images with timestamps (if enabled)  
 ```
-
-## Example Use Case  
-This script was designed to align **year-round images from a fixed window view** at **my work place**, allowing smooth transitions for a time-lapse video showing seasonal changes.
